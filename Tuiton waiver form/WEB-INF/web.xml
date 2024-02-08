@@ -1,0 +1,13 @@
+<web-app>
+    <servlet>
+        <servlet-name>waiver</servlet-name>
+        <servlet-class>WaiverServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>waiver</servlet-name>
+        <url-pattern>/waiver.htm</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
