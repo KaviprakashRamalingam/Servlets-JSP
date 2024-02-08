@@ -1,0 +1,10 @@
+<web-app>
+    <servlet>
+        <servlet-name>hs</servlet-name>
+        <servlet-class>GetHeaderNamesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hs</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+</web-app>
