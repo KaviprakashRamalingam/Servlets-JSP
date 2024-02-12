@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tution Form</title>
+</head>
+
+<body>
+    <form method="post" action="waiver.htm">
+        <h2>Tuition Waiver Form</h2>
+        <fieldset>
+            <p>This form is used by part-time faculty, part-time staff, retirees, their spouses or domestic partners and
+                their dependents. All full-time faculty and staff should use the online Tuition Waiver Form found on
+                myNEU. Before completing
+                this form, please refer to the Tuition Waiver Program Guidelines. Be sure to include a Dependent
+                Certification Form along with the submission of this form for any dependent children.</p>
+        </fieldset>
+        <fieldset>
+            <legend>Section 1</legend>
+            <label>Academic Term:</label>
+            <select id="term" name="term" required>
+                <option value=""></option>
+                <option value="Fall">Fall</option>
+                <option value="Winter">Winter</option>
+                <option value="Spring">Spring</option>
+                <option value="Summer">Summer</option>
+            </select><br>
+            <p>Academic Year: <input type="text" name="year" required></p>
+            <p>Employee Status:
+                <input type="checkbox" id="staff" name="emp_status" value="Staff" required>
+                <label>P/T Staff</label>
+                <input type="checkbox" id="faculty" name="emp_status" value="Faculty">
+                <label>P/T Faculty</label>
+                <input type="checkbox" id="retiree" name="emp_status" value="Retiree">
+                <label>Retiree</label>
+                <input type="checkbox" id="other" name="emp_status" value="Other">
+                <label>Other</label>
+            </p>
+            <p>*Terms with multiple sessions are considered one academic term for tuition waiver purposes e.g., summer
+                sessions I and II are considered one academic term.
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Section 2</legend>
+            <p>Student's Name: <input type="text" name="sname" required> 
+                   Relationship to Employee:<input type="text" name="relationship" required> 
+                   Student's NUID: <input type="text" name="snuid" required></p>
+                <fieldset>
+                    <legend>(if different from Student's)</legend>
+                    <p>Employee's Name: <input type="text" name="ename" required> 
+                       Employee's NUID: <input type="text" name="enuid" required></p>
+                </fieldset>
+
+                <p>Department: <input type="text" name="dept" required> 
+                   Campus Location: <input type="text" name="c_location" required> 
+                   Phone Number: <input type="tel" name="num" required>
+                   Supervisor's Name: <input type="text" name="sup_name" required></p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Section 3</legend>
+            <p>Indicate the applicable school or program:</p>
+            <input type="checkbox" id="ug" name="course" value="Undergraduate Program">
+            <label>Undergraduate Program</label>
+            <input type="checkbox" id="law_school" name="course" value="Law School">
+            <label>Law School (excludes employees)</label>
+            <input type="checkbox" id="doctral_candidate" name="course" value="Doctral Candidate">
+            <label>Doctral Candidate</label><br>
+            <input type="checkbox" id="cps_undergraduate" name="course" value="CPS Undergraduate">
+            <label>College of Professional Studies (CPS) Undergraduate</label>
+            <input type="checkbox" id="graduate" name="course" value="Graduate School">
+            <label>Graduate School</label>
+            <input type="checkbox" id="cps_graduate" name="course" value="CPS Graduate School">
+            <label>College of Professional Studies (CPS) Graduate School</label>
+            <p>One course per academic term may be taken one-half hour before the end of your workday. If this applies
+                to you, this
+                form must be signed by your supervisor below and approved by Human Resources Management.</p>
+            <p>Complete the following course information. If you are an employee taking a job related course, please
+                attach the Job
+                Related Designation Form to this waiver. </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course No.</th>
+                        <th>Course Name</th>
+                        <th>Supervisor Signature</th>
+                        <th>Credit Hrs.</th>
+                        <th>Day(s)</th>
+                        <th>a.m./p.m.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="course_no"></td>
+                        <td><input type="text" name="course_name"></td>
+                        <td><input type="text" name="sign"></td>
+                        <td><input type="number" name="credit_hrs" min="0" max="5"></td>
+                        <td><input type="text" name="days"></td>
+                        <td><input type="text" name="am_pm"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="course_no"></td>
+                        <td><input type="text" name="course_name"></td>
+                        <td><input type="text" name="sign"></td>
+                        <td><input type="number" name="credit_hrs" min="0" max="5"></td>
+                        <td><input type="text" name="days"></td>
+                        <td><input type="text" name="am_pm"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="course_no"></td>
+                        <td><input type="text" name="course_name"></td>
+                        <td><input type="text" name="sign"></td>
+                        <td><input type="number" name="credit_hrs" min="0" max="5"></td>
+                        <td><input type="text" name="days"></td>
+                        <td><input type="text" name="am_pm"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Section 4</legend>
+            <p>In accordance with Northeastern University's Tuition Waiver Program Guidelines, my signature attests that
+                I am currently enrolled in the above courses, or that the student listed above is my spouse, domestic
+                partner
+                or unmarried dependent child or the dependent child of my domestic partner as defined under current IRS
+                tax
+                regulations. I also certify that I have read the Tuition Waiver Program Guidelines.</p>
+            <p><label>Employee's Signature:</label>
+                <input type="file" id="employee_signature" name="employee_sign" accept="image/*">Date: <input
+                    type="date" name="date" required>
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Section 5</legend>
+            <p>HRM Approval: <input type="text" name="HRM" required> Date: <input type="date" name="date_1" required></p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p>Forms will be reviewed for completeness and eligibility. You will be notified if any additional
+                information is needed. Mail completed form to Human Resources, 250 Columbus Place or fax to (617)
+                373-7610. All waivers must be received by HRM within 30 days of the course start date.
+            </p>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
