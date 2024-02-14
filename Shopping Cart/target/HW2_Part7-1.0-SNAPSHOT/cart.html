@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping Cart</title>
+    </head>
+    <body>
+        <h1>Shopping Cart</h1>
+        <ul>
+            <jsp:scriplet>
+            List<String> cart = (List<String>) request.getSession().getAttribute("cart");
+                    if (cart != null) {
+                    for (String item : cart) {
+                    out.println("<li>" + item + " <form action=\"shoppingCart\" method=\"post\">" +
+                            "<input type=\"hidden\" name=\"item\" value=\"" + item + "\">" +
+                            "<input type=\"submit\" name=\"action\" value=\"remove\"></form></li>");
+                    }
+                    } else {
+                    out.println("<li>Cart is empty</li>");
+                    }
+            </jsp:scriplet>
+                    </ul>
+                    </body>
+                    </html>
