@@ -1,0 +1,4 @@
+com/mycompany/hw3_7/model/Book.class
+com/mycompany/hw3_7/resources/JakartaEE10Resource.class
+com/mycompany/hw3_7/controller/JakartaRestConfiguration.class
+com/mycompany/hw3_7/controller/BooksController.class
