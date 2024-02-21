@@ -1,0 +1,4 @@
+com/mycompany/hw3_4/resources/JakartaEE10Resource.class
+com/mycompany/hw3_4/controller/MovieController.class
+com/mycompany/hw3_4/pojo/Movie.class
+com/mycompany/hw3_4/controller/JakartaRestConfiguration.class
