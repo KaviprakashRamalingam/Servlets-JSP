@@ -1,0 +1,2 @@
+com.mycompany.hw4_9.controller.UserController=org.springframework.stereotype.Component
+com.mycompany.hw4_9.util.UtilClass=org.springframework.stereotype.Component
